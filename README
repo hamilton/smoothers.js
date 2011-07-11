@@ -1,0 +1,6 @@
+smoothers.js
+============
+
+Requires d3.js.
+
+A small library that computes a simple LOWESS or LS line from an x and a y.  Very useful if you are making scatterplots via javascript (with, for instance, d3), and at the moment fast enough for quick updates.
