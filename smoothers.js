@@ -148,8 +148,8 @@ function lowess_robust(x, y, alpha, inc){
 	var r = [];
 	for (var i = 0; i < x.length; i += 1) {r.push(1)};
 	_l = _calculate_lowess_fit(x,y,alpha, inc, r);
-	var x_proto = _.x;
-	var y_proto = _.y;
+	var x_proto = _l.x;
+	var y_proto = _l.y;
 
 	// Now, take the fit, recalculate the weights, and re-run LOWESS using r*w instead of w.
 
